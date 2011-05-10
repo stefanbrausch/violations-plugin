@@ -27,6 +27,8 @@ import hudson.plugins.violations.util.AbsoluteFileFinder;
  * @author Eric Nyaben
  */
 public class JsLintParser implements ViolationsParser {
+	
+	static final String TYPE_NAME = "jslint";
 
     /** Regex pattern for the JsLint errors. */
     private final transient Pattern pattern;
@@ -46,7 +48,7 @@ public class JsLintParser implements ViolationsParser {
     	BufferedReader reader = null;
         
     	absoluteFileFinder.addSourcePath(projectPath.getAbsolutePath());
-    	absoluteFileFinder.addSourcePaths(sourcePaths);
+    	//absoluteFileFinder.addSourcePaths(sourcePaths);
         
         try {
             reader = new BufferedReader(

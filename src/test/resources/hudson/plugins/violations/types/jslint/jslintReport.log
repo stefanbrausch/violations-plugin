@@ -1,0 +1,6 @@
+trunk/src/main/webapp/test/js/jquery-1.2.5.js:14:27:[C]convention, for programming standard violation
+trunk/src/main/webapp/test/js/jquery-1.2.5.js:15:27:[R]refactor, for bad code smell
+trunk/src/main/webapp/test/js/jquery-1.2.5.js:16:27:[W]warning, for javascript specific problems
+trunk/src/main/webapp/test/js/jquery-1.2.5.js:18:28:[E]error, for much probably bugs in the code
+trunk/src/main/webapp/test/js/jquery-1.2.5.js:18:28:[F]fatal, if an error occured
+trunk/src/main/webapp/test/js/jquery-1.2.5.js:19:28:[F]fatal222, if an error occured
