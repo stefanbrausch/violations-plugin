@@ -2,9 +2,9 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.jvnet.hudson.plugins</groupId>
+    <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>1.319</version>
+    <version>1.447</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
@@ -73,7 +73,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.jvnet.hudson.main</groupId>
+      <groupId>org.jenkins-ci.main</groupId>
       <artifactId>maven-plugin</artifactId>
     </dependency>
     <dependency>
@@ -84,8 +84,22 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.3.1</version>
+      <version>4.8.2</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <repositories>
+    <repository>
+      <id>m.g.o-public</id>
+      <url>http://maven.glassfish.org/content/groups/public/</url>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>m.g.o-public</id>
+      <url>http://maven.glassfish.org/content/groups/public/</url>
+    </pluginRepository>
+  </pluginRepositories>
+
 </project>
